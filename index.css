@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Header */
+
+body header{
+  background-color: #424242;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px ;
+ 
+}
+
+/* سلکتور */
+nav select {
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #9d9d9e;
+  margin-top: 10px;
+  color: white;
+  width: 300px;
+}
+
+.search-box {
+
+  width: auto;
+  height: 50px;
+  color: black;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background: #89898a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-search {
+  background: #89898a;
+  font-size: 24px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 1px;
+  padding-left: 1rem;
+  color: rgb(2, 2, 2);
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 50px;
+  width: 250px;
+}
+
+.search-input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+
+/* Body */
+
+.cards {
+  text-align: center;
+  height: 24rem;
+  width: 300px;
+  min-height: 250px;
+  background-color: rgb(226, 224, 228);
+  margin: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+
+}
+.cards:hover{
+  box-shadow: 0 0 0.6rem;
+  
+}
+.cards section{
+  overflow: hidden;
+  height: 9rem;
+  text-overflow: ellipsis;
+
+}
+.cards .cardTitle{
+  background-color: #252525;
+  color: #ffffff;
+  margin-top: 0%;
+  padding: .4rem;
+  align-items: flex-start;
+}
+
+.cards .sesonAndEpisode{
+  background-color: #252525;
+  color: #ffffff;
+  padding: .5rem;
+  align-items: flex-end;
+}
+
+.cards img {
+  border-top-left-radius: 5px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* footer */
+
+footer {
+  background-color: #252525;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+  margin-top: 113px;
+  display: flex;
+  justify-content: center;
+}
+.summary {
+  width: 550px;
+  text-align: center;
+  background-color: #525252;
+  border: solid;
+  border-radius: 8px;
+  padding: .75rem;
+
+}
+.link {
+  width: 550px;
+}
+.link a {
+  text-decoration: none;
+  color: black;
+}
+.link span {
+  font-size: 23px;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 830px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .summary {
+    width: 95%;
+  }
+
+  .summary div{
+    width: 95%;
+  }
+
+  nav select {
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .search-box {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin: auto;
+  }
+
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
